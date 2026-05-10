@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Azlon Fashion Home | Luxury Fashion That Defines Your Style</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="luxury-loader">
+            <div class="loader-ring"></div>
+            <div class="loader-text">MAX AZLON</div>
+        </div>
+    </div>
+
+    <!-- Floating Particles Background -->
+    <div class="particles-container" id="particlesContainer"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">MAX AZLON</span>
+                <span class="logo-subtitle">Fashion Home</span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#categories" class="nav-link">Collections</a></li>
+                <li><a href="#why-us" class="nav-link">Why Us</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="tel:+2348000000000" class="nav-phone">
+                    <i class="fas fa-phone"></i>
+                    <span>Call Now</span>
+                </a>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title fade-in-up">
+                Luxury Fashion That<br>Defines Your Style <span class="gold-accent">✨</span>
+            </h1>
+            <p class="hero-subtitle fade-in-up delay-1">
+                Discover beautiful, colorful, and premium-quality outfits designed to make you stand out.
+            </p>
+            <div class="hero-buttons fade-in-up delay-2">
+                <a href="#categories" class="btn btn-primary">Shop With Us</a>
+                <a href="#contact" class="btn btn-secondary">Contact Store</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Brand Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="gold-accent">Max Azlon</span></h2>
+                <p class="section-subtitle">Where Elegance Meets Affordability</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text reveal-left">
+                    <p>At Max Azlon Fashion Home, we believe every individual deserves to feel extraordinary. Located in the heart of Port Harcourt, we curate stunning clothing collections that blend contemporary trends with timeless elegance.</p>
+                    <p>Our mission is simple: deliver <strong>affordable luxury fashion</strong> without compromising on quality. From vibrant African prints to sophisticated evening wear, each piece is carefully selected to make you shine.</p>
+                    <ul class="about-features">
+                        <li><i class="fas fa-check-circle"></i> Stylish & Trendy Collections</li>
+                        <li><i class="fas fa-check-circle"></i> Premium Quality Fabrics</li>
+                        <li><i class="fas fa-check-circle"></i> Affordable Luxury Prices</li>
+                        <li><i class="fas fa-check-circle"></i> Customer Satisfaction Guaranteed</li>
+                    </ul>
+                </div>
+                
+                <div class="about-stats reveal-right">
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon"><i class="fas fa-star"></i></div>
+                        <div class="stat-number" data-target="4.8">0</div>
+                        <div class="stat-label">Star Rating</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon"><i class="fas fa-gem"></i></div>
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">% Premium Quality</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon"><i class="fas fa-smile"></i></div>
+                        <div class="stat-number" data-target="500">0</div>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon"><i class="fas fa-tag"></i></div>
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">% Affordable</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our <span class="gold-accent">Customers Say</span></h2>
+                <p class="section-subtitle">Real Reviews from Real Fashion Lovers</p>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card glass-card reveal-up">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Beautiful, unique and colourful dresses... you need to check them out yourself."</p>
+                    <div class="review-author">
+                        <div class="author-avatar">NA</div>
+                        <div class="author-info">
+                            <h4>Nneka Anya</h4>
+                            <span>Verified Customer</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card glass-card reveal-up delay-1">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Lovely clothing line. Clothes are topnotch."</p>
+                    <div class="review-author">
+                        <div class="author-avatar">AO</div>
+                        <div class="author-info">
+                            <h4>Anya Orji</h4>
+                            <span>Verified Customer</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card glass-card reveal-up delay-2">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Beautiful clothing and amazing prices."</p>
+                    <div class="review-author">
+                        <div class="author-avatar">BN</div>
+                        <div class="author-info">
+                            <h4>Bryan Nweke</h4>
+                            <span>Verified Customer</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card glass-card reveal-up delay-3">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Fantastic."</p>
+                    <div class="review-author">
+                        <div class="author-avatar">BN</div>
+                        <div class="author-info">
+                            <h4>Bryan Nweke</h4>
+                            <span>Verified Customer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fashion Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="gold-accent">Collections</span></h2>
+                <p class="section-subtitle">Explore Our Premium Fashion Categories</p>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card glass-card reveal-up">
+                    <div class="category-icon">
+                        <i class="fas fa-female"></i>
+                    </div>
+                    <h3>Female Wears</h3>
+                    <p>Elegant outfits for the modern woman</p>
+                    <a href="#contact" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="category-card glass-card reveal-up delay-1">
+                    <div class="category-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Luxury Dresses</h3>
+                    <p>Premium dresses for special occasions</p>
+                    <a href="#contact" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="category-card glass-card reveal-up delay-2">
+                    <div class="category-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Casual Outfits</h3>
+                    <p>Comfortable yet stylish everyday wear</p>
+                    <a href="#contact" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="category-card glass-card reveal-up delay-3">
+                    <div class="category-icon">
+                        <i class="fas fa-glasses"></i>
+                    </div>
+                    <h3>Fashion Accessories</h3>
+                    <p>Complete your look with premium accessories</p>
+                    <a href="#contact" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="category-card glass-card reveal-up delay-4">
+                    <div class="category-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Trendy Collections</h3>
+                    <p>Latest trends straight from the runway</p>
+                    <a href="#contact" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="category-card glass-card reveal-up delay-5">
+                    <div class="category-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Boutique Styles</h3>
+                    <p>Exclusive pieces you won't find elsewhere</p>
+                    <a href="#contact" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose <span class="gold-accent">Max Azlon</span></h2>
+                <p class="section-subtitle">The Max Azlon Difference</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card glass-card reveal-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Affordable Prices</h3>
+                    <p>Luxury fashion that doesn't break the bank</p>
+                </div>
+                
+                <div class="feature-card glass-card reveal-up delay-1">
+                    <div class="feature-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Luxury Quality</h3>
+                    <p>Premium fabrics and impeccable craftsmanship</p>
+                </div>
+                
+                <div class="feature-card glass-card reveal-up delay-2">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Beautiful Designs</h3>
+                    <p>Unique patterns and stunning color combinations</p>
+                </div>
+                
+                <div class="feature-card glass-card reveal-up delay-3">
+                    <div class="feature-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Unique Styles</h3>
+                    <p>Stand out with exclusive fashion pieces</p>
+                </div>
+                
+                <div class="feature-card glass-card reveal-up delay-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Fast Support</h3>
+                    <p>Quick responses to all your fashion inquiries</p>
+                </div>
+                
+                <div class="feature-card glass-card reveal-up delay-5">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Fashion Expertise</h3>
+                    <p>Expert styling advice from our team</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Review Highlight -->
+    <section class="google-review">
+        <div class="container">
+            <div class="google-review-card glass-card reveal-up">
+                <div class="google-badge">
+                    <img src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" class="google-logo">
+                    <div class="google-rating">
+                        <span class="rating-number">4.8</span>
+                        <div class="rating-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-count">on Google</span>
+                    </div>
+                </div>
+                <div class="google-reviews">
+                    <div class="google-review-item">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Beautiful clothing and amazing prices</p>
+                    </div>
+                    <div class="google-review-item">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Unique and colourful dresses</p>
+                    </div>
+                </div>
+                <a href="https://maps.google.com" target="_blank" class="btn btn-gold">
+                    <i class="fas fa-map-marker-alt"></i> View on Google Maps
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Booking Form -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span class="gold-accent">Touch</span></h2>
+                <p class="section-subtitle">Start Your Fashion Journey Today</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info reveal-left">
+                    <div class="info-card glass-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Visit Us</h3>
+                            <p>Harmony House Plaza, Woji Rd,<br>opposite Zenith Bank, Trans Amadi,<br>Port Harcourt, Rivers State</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card glass-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Call Us</h3>
+                            <p>+234 800 000 0000<br>+234 700 000 0000</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card glass-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email Us</h3>
+                            <p>info@maxazlonfashion.com<br>sales@maxazlonfashion.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card glass-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Business Hours</h3>
+                            <p>Mon - Sat: 9:00 AM - 8:00 PM<br>Sunday: 12:00 PM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper reveal-right">
+                    <form class="contact-form glass-card" id="contactForm">
+                        <h3>Send Us a Message</h3>
+                        
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required placeholder="your@email.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+234 XXX XXX XXXX">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="interest">Fashion Interest</label>
+                                <select id="interest" name="interest" required>
+                                    <option value="">Select your interest</option>
+                                    <option value="female-wears">Female Wears</option>
+                                    <option value="luxury-dresses">Luxury Dresses</option>
+                                    <option value="casual-outfits">Casual Outfits</option>
+                                    <option value="accessories">Fashion Accessories</option>
+                                    <option value="trendy-collections">Trendy Collections</option>
+                                    <option value="boutique-styles">Boutique Styles</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="outfitType">Preferred Outfit Type</label>
+                                <select id="outfitType" name="outfitType" required>
+                                    <option value="">Select outfit type</option>
+                                    <option value="traditional">Traditional</option>
+                                    <option value="contemporary">Contemporary</option>
+                                    <option value="evening-wear">Evening Wear</option>
+                                    <option value="casual">Casual</option>
+                                    <option value="corporate">Corporate</option>
+                                    <option value="party">Party/Event</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Tell us about your fashion needs..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading">
+                                <i class="fas fa-spinner fa-spin"></i> Sending...
+                            </span>
+                        </button>
+                        
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-text">MAX AZLON</span>
+                        <span class="logo-subtitle">Fashion Home</span>
+                    </a>
+                    <p class="footer-description">
+                        Your destination for luxury fashion in Port Harcourt. 
+                        Beautiful, unique, and affordable clothing for the modern individual.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/2348000000000" target="_blank" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" class="social-link facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://tiktok.com" target="_blank" class="social-link tiktok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#categories">Collections</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Harmony House Plaza, Woji Rd, Port Harcourt</li>
+                        <li><i class="fas fa-phone"></i> +234 800 000 0000</li>
+                        <li><i class="fas fa-envelope"></i> info@maxazlonfashion.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 9AM-8PM</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-location">
+                    <h4>Find Us</h4>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.5!2d7.0!3d4.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwNDgnMDAuMCJOIDfCsDAwJzAwLjAiRQ!5e0!3m2!1sen!2sng!4v1234567890" 
+                            width="100%" 
+                            height="200" 
+                            style="border:0; border-radius: 10px;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Max Azlon Fashion Home. All Rights Reserved.</p>
+                <p>Crafted with <i class="fas fa-heart gold-accent"></i> in Port Harcourt</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/2348000000000" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Custom JavaScript -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
