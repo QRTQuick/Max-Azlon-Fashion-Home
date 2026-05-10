@@ -34,25 +34,46 @@
 
 ---
 
-### Option 2: Vercel (Frontend Only)
+### Option 2: Vercel (Full Stack with Python)
 
-For frontend-only deployment without the Flask backend:
+**Vercel now supports Python backends!**
 
-1. **Modify for static hosting:**
-   - Update form action to use external email service
-   - Or use Vercel Serverless Functions
+1. **Ensure you have these files:**
+   - `vercel.json` - Already included with proper routing
+   - `requirements.txt` - Already included
+   - `runtime.txt` - Already included
 
 2. **Deploy to Vercel:**
    ```bash
+   # Install Vercel CLI
    npm i -g vercel
+   
+   # Login to Vercel
    vercel login
+   
+   # Deploy
+   cd max-azlon-fashion
    vercel
    ```
 
-3. **Configure project:**
-   - Follow Vercel prompts
-   - Set build command: `echo "No build needed"`
-   - Set output directory: `/`
+3. **Configure Environment Variables in Vercel Dashboard:**
+   - Go to your project settings on vercel.com
+   - Navigate to "Environment Variables"
+   - Add:
+     - `BREVO_API_KEY`: Your Brevo API key
+     - `SENDER_EMAIL`: noreply@maxazlonfashion.com
+     - `RECIPIENT_EMAIL`: info@maxazlonfashion.com
+     - `FLASK_ENV`: production
+
+4. **Important: The vercel.json file configures:**
+   - Static files (CSS, JS) are served from `/static` folder
+   - All routes point to the Flask app
+   - Proper caching headers for static assets
+
+5. **Redeploy after setting env vars:**
+   ```bash
+   vercel --prod
+   ```
 
 ---
 
