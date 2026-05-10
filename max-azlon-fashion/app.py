@@ -3,7 +3,7 @@ Max Azlon Fashion Home - Flask Backend
 Luxury Fashion Landing Page with Brevo Email Integration
 """
 
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_from_directory
 from flask_cors import CORS
 import os
 import requests
@@ -12,7 +12,12 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-app = Flask(__name__)
+# Initialize Flask app with explicit static folder configuration
+app = Flask(
+    __name__,
+    static_folder='static',
+    static_url_path='/static'
+)
 CORS(app)  # Enable CORS for frontend communication
 
 # Configuration
@@ -27,6 +32,12 @@ BUSINESS_ADDRESS = 'Harmony House Plaza, Woji Rd, Port Harcourt'
 def index():
     """Serve the main landing page"""
     return render_template('index.html')
+
+
+@app.route('/static/<path:filename>')
+def serve_static(filename):
+    """Serve static files (CSS, JS, images)"""
+    return send_from_directory(app.static_folder, filename)
 
 
 @app.route('/api/send-email', methods=['POST'])
